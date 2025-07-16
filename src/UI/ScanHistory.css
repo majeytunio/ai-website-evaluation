@@ -1,0 +1,5 @@
+.card_head{
+    background: linear-gradient(90deg, #6e8efb, #a777e3);
+    padding: 0.75rem 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,29 @@
+/* UI/Components/NavBar.css */
+
+.ai-navbar {
+  background: linear-gradient(90deg, #6e8efb, #a777e3);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ai-navbar-brand-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.ai-navbar .nav-link {
+  color: rgba(255,255,255,0.8);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.ai-navbar .nav-link:hover {
+  color: white;
+}
+
+.ai-navbar-button {
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+}

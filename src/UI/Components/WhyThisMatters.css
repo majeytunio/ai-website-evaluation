@@ -1,0 +1,57 @@
+.why-this-matters {
+  background: white;
+}
+
+.section-badge {
+  display: inline-block;
+  background: rgba(110, 142, 251, 0.1);
+  color: #6e8efb;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2f3a;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2b2f3a;
+  margin-bottom: 0.75rem;
+}
+
+.feature-description {
+  color: #6c757d;
+  margin-bottom: 0;
+}

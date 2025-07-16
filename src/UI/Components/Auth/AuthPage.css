@@ -1,0 +1,50 @@
+/* UI/AuthPage.css */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.auth-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-box input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background: #6e8efb;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+  background: #4b6cb7;
+}
+
+.toggle-button {
+  margin-top: 1rem;
+  background: transparent;
+  color: #6e8efb;
+  border: none;
+  cursor: pointer;
+}
