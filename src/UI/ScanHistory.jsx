@@ -148,7 +148,14 @@ const ScanHistory = () => {
         </Alert>
       ) : (
         <div className="row row-cols-1 row-cols-md-3 g-4">
-          {history.map((entry) => (
+          {console.log('History:' + JSON.stringify(history[0], null, 2))}
+          {history
+          .filter(entry => 
+            entry.scan_data && 
+            entry.scan_data.score !== null && 
+            entry.scan_data.company !== null
+          )
+          .map((entry) => (
             <div className="col" key={entry.id}>
               <Card className="h-100 shadow-sm">
                 <Card.Header className="card_head text-white">
@@ -156,11 +163,12 @@ const ScanHistory = () => {
                 </Card.Header>
                 <Card.Body>
                   <Card.Text>
-                    <strong>Company:</strong> {entry.scan_data.company || 'N/A'} <br />
+                    {/* <strong>Company:</strong> {entry.scan_data?.company || 'N/A'} <br /> */}
+                    <strong>Company:</strong> {entry.company} <br />
                     <strong>Scanned On:</strong> {new Date(entry.created_at).toLocaleString()}
                   </Card.Text>
                   <Card.Title className="text-center mt-3">
-                    AI Score: <span className="fw-bold text-success">{entry.scan_data.score}/100</span>
+                    AI Score: <span className="fw-bold text-success">{entry.scan_data?.score}/100</span>
                   </Card.Title>
                   
                   {/* <h6 className="mt-4">Reasons:</h6>
